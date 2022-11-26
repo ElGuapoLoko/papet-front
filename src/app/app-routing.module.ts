@@ -10,12 +10,15 @@ import {HistoryComponent} from "./components/hackathon/history/history.component
 import {ProfileComponent} from "./components/hackathon/profile/profile.component";
 import {SavedComponent} from "./components/hackathon/saved/saved.component";
 import {WatchComponent} from "./components/hackathon/watch/watch.component";
+import {RegisterComponent} from "./components/hackathon/register/register.component";
+import {ListProfessionalsComponent} from "./components/hackathon/list-professionals/list-professionals.component";
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
             {path: '', component: RedirectComponent},
             {path: 'login', component: LoginComponent},
+            {path: 'register', component: RegisterComponent},
             {
                 path: '', component: AdminLayoutComponent,
                 children: [
@@ -24,8 +27,9 @@ import {WatchComponent} from "./components/hackathon/watch/watch.component";
                     {path: 'files', component: FilesComponent},
                     {path: 'history', component: HistoryComponent},
                     {path: 'profile', component: ProfileComponent},
-                    {path: 'saved', component: SavedComponent},
-                    {path: 'watch', component: WatchComponent},
+                    {path: 'list-professionals', component: ListProfessionalsComponent},
+                    // {path: 'saved', component: SavedComponent},
+                    // {path: 'watch', component: WatchComponent},
                 ],
             },
         ], {scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled'})

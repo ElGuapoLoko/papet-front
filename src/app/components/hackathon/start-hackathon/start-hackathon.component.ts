@@ -1,7 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
-// import Swiper core and required modules
 import SwiperCore, {Pagination} from "swiper";
+import {Router} from "@angular/router";
 
 SwiperCore.use([Pagination]);
 
@@ -13,16 +13,18 @@ SwiperCore.use([Pagination]);
 })
 export class StartHackathonComponent implements OnInit {
 
-    constructor() {
+    loading: boolean = false;
+
+    constructor(public router: Router) {
     }
+
 
     ngOnInit(): void {
 
     }
 
-
-
-
-
-
+    searchProfessionals(): void {
+        this.loading = true;
+        this.router.navigate(['/list-professionals']);
+    }
 }
