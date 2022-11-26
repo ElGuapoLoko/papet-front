@@ -1,5 +1,5 @@
-@import "~swiper/css";
-@import "~swiper/css/pagination";
+//@import "~swiper/css";
+//@import "~swiper/css/pagination";
 
 #start-component {
 
@@ -54,6 +54,119 @@
     padding-top: 1rem;
   }
 
+  .font-subtitle2 {
+    font-size: 1.2rem;
+  }
+
+  .p-card .p-card-content {
+    padding: 0;
+  }
+
+  .image-explain {
+    border-radius: 16px;
+  }
+
+  .image1 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-image: url("../../../../assets/layout/images/univet/cat1.webp");
+  }
+
+  .image2 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-image: url("../../../../assets/layout/images/univet/dog5.png");
+  }
+
+  .image3 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-image: url("../../../../assets/layout/images/univet/dog6.jpg");
+  }
+
+  .image4 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-image: url("../../../../assets/layout/images/univet/dog7.webp");
+  }
+
+  .image5 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-image: url("../../../../assets/layout/images/univet/cat2.png");
+  }
+
+  .image6 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    border-radius: 20px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    background-size: cover;
+    background-image: url("../../../../assets/layout/images/univet/cat3.jpg");
+  }
+
+
+  .title-card {
+    font-size: 2.5rem;
+    color: white;
+  }
 
 }
 
