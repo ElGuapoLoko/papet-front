@@ -1,24 +1,9 @@
 <div class="layout-topbar">
     <a class="layout-topbar-logo" routerLink="/start">
-        <span class="microsoft-text">Microsoft </span> <img src="assets/layout/images/hackathon/microsoft_play.PNG" class="insideeee">
-    </a>
-    <a class="p-link layout-topbar-menu-button layout-topbar-button" alt="botão de ações"
-       title="botão de ações" (click)="op.toggle($event)">
-        <i class="pi pi-bars"></i>
+        <span class="microsoft-text">UniVet </span> <img src="assets/layout/images/univet/univet-logo.jpg" class="insideeee">
     </a>
     <div class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active':appMain.topMenuActive}">
-        <i class="pi pi-bars cursor-pointer" (click)="op.toggle($event)"></i>
-        <p-overlayPanel #op>
-            <ng-template pTemplate>
-                <div (click)="myAccount()" class="col-12 inline-flex cursor-pointer" alt="profile" title="profile">
-                    <div class="col-2 noHorizontal"><i class="pi pi-user"></i></div>
-                    <div class="col-10 noHorizontal">Meu espaço</div>
-                </div>
-                <div (click)="logout()" class="col-12 inline-flex cursor-pointer" alt="sair" title="sair">
-                    <div class="col-2 noHorizontal"><i class="pi pi-times"></i></div>
-                    <div class="col-10 noHorizontal">Sair</div>
-                </div>
-            </ng-template>
-        </p-overlayPanel>
+        <button pButton pRipple type="button" label="Entrar" class="p-button-rounded p-button-success mr-3"></button>
+        <button pButton pRipple type="button" label="Registrar" class="p-button-outlined p-button-rounded p-button-success"></button>
     </div>
 </div>
