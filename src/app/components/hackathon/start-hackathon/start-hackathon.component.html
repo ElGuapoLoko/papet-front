@@ -1,10 +1,52 @@
 <div id="start-component">
     <div class="col-12 p-0 image-pet">
+        <div class="col-6 p-0 pt-8 flex flex-column align-items-center">
+            <div class="pb-4">
+                <div>
+                    <span class="font-title">Cuide da saúde do <span
+                            class="color-orange">seu melhor amigo!</span></span>
+                </div>
+                <div>
+                    <span class="font-subtitle">Aqui você encontra os melhores médicos e serviços da saúde a preços acessíveis.</span>
+                </div>
+            </div>
 
+            <p-card [style]="{'width': '60rem' ,'background-color': '#02a775' , 'height': '15rem' ,'border-radius':' 30px'}">
+
+                <div class="col-12 p-0">
+                    <span class="consult-now">Agende agora sua consulta</span>
+                </div>
+                <div class="col-12 p-0">
+                    <span class="consult-now-subtitle">Mais de 10 especialistas de saúde de pet estão prontos para te ajudar</span>
+                </div>
+
+                <div class="col-12 p-0 pt-4 inline-flex justify-content-around">
+                    <div class="col-5 p-0">
+                        <input type="text" class="input-start" placeholder="Nome, Especialidade ou serviço" pInputText/>
+                    </div>
+                    <div class="col-5 p-0">
+                        <input type="text" class="input-start" placeholder="Localização" pInputText/>
+                    </div>
+                </div>
+                <div class="col-12 p-0 flex justify-content-end">
+                    <p-button label="Pesquisar" icon="pi pi-search" class="button-search" iconPos="right"></p-button>
+                </div>
+            </p-card>
+        </div>
+        <div class="col-6 p-0"></div>
+    </div>
+    <div class="col-12 flex flex-column p-0 align-items-center">
+        <div class="col-5 p-0 flex justify-content-center">
+            <span>Somos um novo conceito em saúde do seu pet!</span>
+        </div>
+        <div class="col-5 p-0 flex justify-content-center">
+            <span>
+                A PaPet é uma plataforma que oferece consultas e exames para o seu pet de forma segura e prática, através de agendamento on-line, além de oferecer muitos outros benefícios!
+            </span>
+        </div>
 
 
     </div>
-
 
 
 </div>
