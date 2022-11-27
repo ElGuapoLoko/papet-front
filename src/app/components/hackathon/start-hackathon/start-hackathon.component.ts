@@ -9,7 +9,7 @@ SwiperCore.use([Pagination]);
     selector: 'app-start-hackathon',
     templateUrl: './start-hackathon.component.html',
     styleUrls: ['./start-hackathon.component.scss'],
-    encapsulation: ViewEncapsulation.None,
+    encapsulation: ViewEncapsulation.None
 })
 export class StartHackathonComponent implements OnInit {
 

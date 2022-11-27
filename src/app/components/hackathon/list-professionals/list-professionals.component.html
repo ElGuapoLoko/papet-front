@@ -1,1 +1,89 @@
-<p>list-professionals works!</p>
+<div id="list-professionals">
+    <div class="col-12 p-0 inline-flex justify-content-center mt-5 mb-2">
+        <div>
+            <span class="search-text">{{searchText}}&nbsp;-&nbsp;</span>
+        </div>
+        <div>
+            <span class="search-text">{{location}}</span>
+        </div>
+    </div>
+    <div class="col-12 p-0 flex justify-content-center">
+        <div class="col-8 inline-flex">
+            <div class="col-4">
+                <p-card [style]="{'width': '90%'}">
+                    <div class="col-12 p-0 pl-3">
+                        <span class="search-text">Pesquisar</span>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" placeholder="Nome, Especialidade ou serviço" id="inputtext" pInputText>
+                    </div>
+                    <div class="col-12 mt-2">
+                    <span class="p-float-label">
+                        <p-calendar id="calendar1" dateFormat="dd/mm/yy"></p-calendar>
+                        <label for="calendar1">Data início</label>
+                    </span>
+                    </div>
+                    <div class="col-12 mt-2">
+                    <span class="p-float-label">
+                        <p-calendar id="calendar2" dateFormat="dd/mm/yy"></p-calendar>
+                        <label for="calendar2">Data final</label>
+                    </span>
+                    </div>
+                    <div class="col-12">
+                        <div class="pr-0 pl-0 col-12">
+                            <span>Preço: <span class="price"><strong>de R$ {{valueSelected[0]}}
+                                até R$ {{valueSelected[1]}}</strong></span></span>
+                        </div>
+                        <div class="col-12">
+                            <p-slider [(ngModel)]="valueSelected" [max]="5000" [min]="10" [range]="true"></p-slider>
+                        </div>
+                    </div>
+                    <div class="col-12 flex pt-5 justify-content-center">
+                        <p-button label="Pesquisar" (click)="search()"
+                                  [icon]="loading ? 'pi pi-spin pi-spinner' : 'pi pi-search'"
+                                  iconPos="right"></p-button>
+                    </div>
+                </p-card>
+            </div>
+            <div class="col-8">
+                <p-card [style]="{'width': '100%'}">
+                    <div class="col-12 p-0 inline-flex">
+                        <div class="col-6 p-0">
+                            <div class="col-12 p-0 inline-flex">
+                                <div class="col-4 flex justify-content-center align-self-center">
+                                    <p-image src="assets/layout/images/avatar/men1.svg" alt="Image" width="80" [preview]="true"></p-image>
+                                </div>
+                                <div class="col-8">
+                                    <div>
+                                        <span>Dr. Henrique Siqueira Cheim</span>
+                                    </div>
+                                    <div>
+                                        <span>Clínico geral, Sedação, Anestesia</span>
+                                    </div>
+                                    <div>
+                                        <span>Status: Muito recomendado</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 p-0 ">
+                                <div class="col-12 p-0 pl-3">
+                                    <span>Endereço</span>
+                                </div>
+                                <div class="col-12 p-0 pl-3">
+                                    <span>Rua S2 Quadra S5A, 913, Setor Bela Vista</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 p-0">
+                            <p-calendar id="calendar-professional" [inline]="true" [showWeek]="true" inputId="template">
+                                <ng-template pTemplate="date" let-date>
+                                    <span [ngStyle]="{textDecoration: (date.day < dateStart && date.day > dateEnd) ? 'line-through' : 'inherit'}">{{date.day}}</span>
+                                </ng-template>
+                            </p-calendar>
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+    </div>
+</div>
