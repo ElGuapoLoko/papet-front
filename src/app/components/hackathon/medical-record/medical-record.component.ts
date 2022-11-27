@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./medical-record.component.scss']
 })
 export class MedicalRecordComponent implements OnInit {
+  records: any[];
 
-  constructor() { }
+  loading: boolean = true;
 
-  ngOnInit(): void {
+  activityValues: number[] = [0, 100];
+
+  constructor() {
+  }
+
+  ngOnInit() {
+    this.loading = false;
+
+    this.records = [{}];
+
   }
 
 }
