@@ -9,7 +9,8 @@ import {MessageService} from "primeng/api";
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss']
+    styleUrls: ['./login.component.scss'],
+    providers: [MessageService]
 })
 export class LoginComponent implements OnInit, OnDestroy {
 
@@ -46,10 +47,11 @@ export class LoginComponent implements OnInit, OnDestroy {
 
             this.loginService.login(payload).subscribe((response) => {
                 if (response.status == 'success') {
-                    this.router.navigate(['/login']);
+                    localStorage.setItem('user', response.data);
+                    this.router.navigate(['/dashboard']);
                 }
                 if (response.status == 'error') {
-                    this.messageService.add({severity: 'error', summary: 'Erro', detail: response.message});
+                    this.messageService.add({severity:'error', summary: 'Error', detail: 'Login ou senha incorretos'});
                 }
             });
     }
