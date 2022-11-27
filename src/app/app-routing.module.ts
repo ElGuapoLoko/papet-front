@@ -13,6 +13,10 @@ import {NextConsultsComponent} from "./components/hackathon/next-consults/next-c
 import {FeedbacksComponent} from "./components/hackathon/feedbacks/feedbacks.component";
 import {MyPetsComponent} from "./components/hackathon/my-pets/my-pets.component";
 import {AlertsComponent} from "./components/hackathon/alerts/alerts.component";
+import {CalendarComponent} from "./components/hackathon/calendar/calendar.component";
+import {MedicalRecordComponent} from "./components/hackathon/medical-record/medical-record.component";
+import {PlanComponent} from "./components/hackathon/plan/plan.component";
+import {SettingsComponent} from "./components/hackathon/settings/settings.component";
 
 @NgModule({
     imports: [
@@ -30,7 +34,11 @@ import {AlertsComponent} from "./components/hackathon/alerts/alerts.component";
                     {path: 'dashboard', component: DashboardComponent},
                     {path: 'next-consults', component: NextConsultsComponent},
                     {path: 'feedbacks', component: FeedbacksComponent},
+                    {path: 'calendar', component: CalendarComponent},
+                    {path: 'medical-record', component: MedicalRecordComponent},
                     {path: 'alerts', component: AlertsComponent},
+                    {path: 'plan', component: PlanComponent},
+                    {path: 'settings', component: SettingsComponent},
                     {path: 'list-professionals', component: ListProfessionalsComponent},
                 ],
             },

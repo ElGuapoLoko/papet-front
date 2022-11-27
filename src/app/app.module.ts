@@ -110,15 +110,19 @@ import {AccountComponent} from './components/hackathon/account/account.component
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import {SwiperModule} from "swiper/angular";
 import {RedirectComponent} from './layouts/redirect/redirect.component';
-import { HistoryComponent } from './components/hackathon/history/history.component';
-import { RegisterComponent } from './components/hackathon/register/register.component';
-import { ListProfessionalsComponent } from './components/hackathon/list-professionals/list-professionals.component';
-import { DashboardComponent } from './components/hackathon/dashboard/dashboard.component';
-import { SidebarComponent } from './components/hackathon/sidebar/sidebar.component';
-import { NextConsultsComponent } from './components/hackathon/next-consults/next-consults.component';
-import { FeedbacksComponent } from './components/hackathon/feedbacks/feedbacks.component';
-import { MyPetsComponent } from './components/hackathon/my-pets/my-pets.component';
-import { AlertsComponent } from './components/hackathon/alerts/alerts.component';
+import {HistoryComponent} from './components/hackathon/history/history.component';
+import {RegisterComponent} from './components/hackathon/register/register.component';
+import {ListProfessionalsComponent} from './components/hackathon/list-professionals/list-professionals.component';
+import {DashboardComponent} from './components/hackathon/dashboard/dashboard.component';
+import {SidebarComponent} from './components/hackathon/sidebar/sidebar.component';
+import {NextConsultsComponent} from './components/hackathon/next-consults/next-consults.component';
+import {FeedbacksComponent} from './components/hackathon/feedbacks/feedbacks.component';
+import {MyPetsComponent} from './components/hackathon/my-pets/my-pets.component';
+import {AlertsComponent} from './components/hackathon/alerts/alerts.component';
+import {CalendarComponent} from './components/hackathon/calendar/calendar.component';
+import {MedicalRecordComponent} from './components/hackathon/medical-record/medical-record.component';
+import {PlanComponent} from './components/hackathon/plan/plan.component';
+import {SettingsComponent} from './components/hackathon/settings/settings.component';
 
 @NgModule({
     imports: [
@@ -213,7 +217,7 @@ import { AlertsComponent } from './components/hackathon/alerts/alerts.component'
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
-        SwiperModule
+        SwiperModule,
     ],
     declarations: [
         AppComponent,
@@ -235,7 +239,11 @@ import { AlertsComponent } from './components/hackathon/alerts/alerts.component'
         NextConsultsComponent,
         FeedbacksComponent,
         MyPetsComponent,
-        AlertsComponent
+        AlertsComponent,
+        CalendarComponent,
+        MedicalRecordComponent,
+        PlanComponent,
+        SettingsComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
