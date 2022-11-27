@@ -117,6 +117,8 @@ import { SavedComponent } from './components/hackathon/saved/saved.component';
 import { WatchComponent } from './components/hackathon/watch/watch.component';
 import { RegisterComponent } from './components/hackathon/register/register.component';
 import { ListProfessionalsComponent } from './components/hackathon/list-professionals/list-professionals.component';
+import { DashboardComponent } from './components/hackathon/dashboard/dashboard.component';
+import { SidebarComponent } from './components/hackathon/sidebar/sidebar.component';
 
 @NgModule({
     imports: [
@@ -232,6 +234,8 @@ import { ListProfessionalsComponent } from './components/hackathon/list-professi
         WatchComponent,
         RegisterComponent,
         ListProfessionalsComponent,
+        DashboardComponent,
+        SidebarComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

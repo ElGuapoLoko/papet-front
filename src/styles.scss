@@ -29,3 +29,7 @@
 .microsoft-text{
     font-size: 2rem;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}

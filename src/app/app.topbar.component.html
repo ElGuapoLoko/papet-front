@@ -1,11 +1,14 @@
 <div class="layout-topbar">
     <a class="layout-topbar-logo" routerLink="/start">
-        <span class="microsoft-text">UniVet </span> <img src="assets/layout/images/univet/univet-logo.jpg" class="insideeee">
+        <span class="microsoft-text">PaPet </span>
+        <img src="assets/layout/images/univet/univet-logo.jpg" class="insideeee">
     </a>
     <div class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active':appMain.topMenuActive}">
-        <button pButton pRipple type="button" routerLink="/login" label="Entrar"
+        <button *ngIf="showButtonsLogin" pButton pRipple type="button" routerLink="/login" label="Entrar"
                 class="p-button-rounded p-button-success mr-3"></button>
-        <button pButton pRipple type="button" label="Registrar" routerLink="/register"
+        <button *ngIf="showButtonsLogin" pButton pRipple type="button" label="Registrar" routerLink="/register"
                 class="p-button-outlined p-button-rounded p-button-success"></button>
+        <button *ngIf="!showButtonsLogin" pButton pRipple type="button" label="Sair" routerLink="/start"
+                class="p-button-outlined p-button-rounded p-button-danger"></button>
     </div>
 </div>

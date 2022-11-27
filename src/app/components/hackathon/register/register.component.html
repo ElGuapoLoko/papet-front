@@ -7,13 +7,8 @@
                     <div class="text-center inline-flex w-full justify-content-center align-items-center mt-3">
                         <span class="microsoft-text">Registrar </span>
                     </div>
+
                     <div class="field col-12 pl-0 pr-0 mt-6">
-                        <span class="p-float-label">
-                            <input type="text" id="email" pInputText class="inputs">
-                            <label for="email" class="textInputs">E-mail</label>
-                        </span>
-                    </div>
-                    <div class="field col-12 pl-0 pr-0 ">
                         <span class="p-float-label">
                             <input type="text" id="name" pInputText class="inputs">
                             <label for="name" class="textInputs">Nome</label>
@@ -31,13 +26,18 @@
                             <label for="telefone" class="textInputs">Telefone</label>
                         </span>
                     </div>
-
                     <div class="field col-12 pl-0 pr-0 ">
-                            <span class="p-float-label">
-            <p-dropdown id="type" [autoDisplayFirst]="false" [options]="optionsTypes" [(ngModel)]="selectedType"
-                        optionLabel="name"></p-dropdown>
-            <label for="type">Selecione ...</label>
-        </span>
+                        <span class="p-float-label">
+                            <p-dropdown id="type" [autoDisplayFirst]="false" [options]="optionsTypes"
+                                        [(ngModel)]="selectedType" optionLabel="name"></p-dropdown>
+                            <label for="type">Selecione o seu perfil</label>
+                        </span>
+                    </div>
+                    <div class="field col-12 pl-0 pr-0">
+                        <span class="p-float-label">
+                            <input type="text" id="email" pInputText class="inputs">
+                            <label for="email" class="textInputs">E-mail</label>
+                        </span>
                     </div>
                     <div class="field col-12 pl-0 pr-0">
                         <span class="p-float-label">
@@ -47,6 +47,9 @@
                     </div>
                     <button pButton pRipple (click)="register()" label="Registrar"
                             class="w-full p-3 text-xl buttonSingin"></button>
+                    <div class="col-12 mt-2">
+                        <span class="justify-content-center flex cursor-pointer" routerLink="/login">Voltar</span>
+                    </div>
                 </div>
             </div>
         </div>
