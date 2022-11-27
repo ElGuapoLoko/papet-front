@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-history',
-  templateUrl: './history.component.html',
-  styleUrls: ['./history.component.scss']
+    selector: 'app-history',
+    templateUrl: './history.component.html',
+    styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent implements OnInit {
+    histories: any[];
 
-  constructor() { }
+    loading: boolean = true;
 
-  ngOnInit(): void {
-  }
+    activityValues: number[] = [0, 100];
+
+    constructor() {
+    }
+
+    ngOnInit() {
+        this.loading = false;
+
+        this.histories = [{}];
+
+    }
 
 }

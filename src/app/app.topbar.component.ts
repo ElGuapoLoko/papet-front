@@ -21,6 +21,7 @@ export class AppTopBarComponent {
     }
 
     logout(): void {
+        localStorage.clear();
         this.router.navigate(['/start'])
     }
 
