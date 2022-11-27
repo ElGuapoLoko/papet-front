@@ -10,18 +10,18 @@
                         <span class="font-title">Meus dados</span>
                     </div>
                     <div class="col-12">
-                        <span class="font-email">Email: {{user?.email}}</span>
+                        <span class="font-email">Email: {{user.email}}</span>
                     </div>
                     <div class="col-12 p-0 inline-flex mt-4">
                         <div class="col-6">
                             <span class="p-float-label">
-                                <input type="text" id="name" pInputText>
+                                <input type="text" [(ngModel)]="user.name" id="name" pInputText>
                                 <label for="name">Nome completo</label>
                             </span>
                         </div>
                         <div class="col-6">
                             <span class="p-float-label">
-                                <input type="text" id="cpf" pInputText>
+                                <input type="text" [(ngModel)]="user.cpf" id="cpf" pInputText>
                                 <label for="cpf">CPF</label>
                             </span>
                         </div>
@@ -29,13 +29,13 @@
                     <div class="col-12 p-0 inline-flex mt-4">
                         <div class="col-6">
                             <span class="p-float-label">
-                                <input type="text" id="phone" pInputText>
+                                <input type="text" [(ngModel)]="user.telefone" id="phone" pInputText>
                                 <label for="phone">Telefone</label>
                             </span>
                         </div>
                         <div class="col-6">
                             <span class="p-float-label">
-                                <input type="text" id="whats" pInputText>
+                                <input type="text" [(ngModel)]="user.telefone" id="whats" pInputText>
                                 <label for="whats">Telefone Whatsapp</label>
                             </span>
                         </div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-6">
                             <span class="p-float-label">
-                                <input type="text" id="type" pInputText [disabled]="true">
+                                <input type="text" [(ngModel)]="user.type" id="type" pInputText [disabled]="true">
                                 <label for="type">Tipo</label>
                             </span>
                         </div>

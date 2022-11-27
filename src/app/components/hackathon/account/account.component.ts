@@ -7,7 +7,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-    user: any = null;
+    user: any = {
+        name: '',
+        cpf: '',
+        telefone: '',
+        type: '',
+
+
+    };
     sex_selected: null;
     sexes: any[] = [
         {id: 1, name: 'Másculino', type: 'masc'},
@@ -31,5 +38,9 @@ export class AccountComponent implements OnInit {
     ngOnInit(): void {
         const aux = localStorage.getItem('user');
         this.user = JSON.parse(aux);
+
+        this.sex_selected = this.sexes[0];
+
+        this.user.type = this.user.type == 'OWNER' ? 'Dono de pet' : 'Veterinário'
     }
 }

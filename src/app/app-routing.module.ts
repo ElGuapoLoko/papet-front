@@ -12,6 +12,7 @@ import {DashboardComponent} from "./components/hackathon/dashboard/dashboard.com
 import {NextConsultsComponent} from "./components/hackathon/next-consults/next-consults.component";
 import {FeedbacksComponent} from "./components/hackathon/feedbacks/feedbacks.component";
 import {MyPetsComponent} from "./components/hackathon/my-pets/my-pets.component";
+import {AlertsComponent} from "./components/hackathon/alerts/alerts.component";
 
 @NgModule({
     imports: [
@@ -29,6 +30,7 @@ import {MyPetsComponent} from "./components/hackathon/my-pets/my-pets.component"
                     {path: 'dashboard', component: DashboardComponent},
                     {path: 'next-consults', component: NextConsultsComponent},
                     {path: 'feedbacks', component: FeedbacksComponent},
+                    {path: 'alerts', component: AlertsComponent},
                     {path: 'list-professionals', component: ListProfessionalsComponent},
                 ],
             },

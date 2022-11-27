@@ -118,6 +118,7 @@ import { SidebarComponent } from './components/hackathon/sidebar/sidebar.compone
 import { NextConsultsComponent } from './components/hackathon/next-consults/next-consults.component';
 import { FeedbacksComponent } from './components/hackathon/feedbacks/feedbacks.component';
 import { MyPetsComponent } from './components/hackathon/my-pets/my-pets.component';
+import { AlertsComponent } from './components/hackathon/alerts/alerts.component';
 
 @NgModule({
     imports: [
@@ -233,7 +234,8 @@ import { MyPetsComponent } from './components/hackathon/my-pets/my-pets.componen
         SidebarComponent,
         NextConsultsComponent,
         FeedbacksComponent,
-        MyPetsComponent
+        MyPetsComponent,
+        AlertsComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

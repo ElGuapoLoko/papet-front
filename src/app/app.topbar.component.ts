@@ -13,7 +13,7 @@ export class AppTopBarComponent {
     items: MenuItem[];
     actualRouteString: string = 'dashboard';
     showButtonsLogin: boolean = true;
-    noShowLoginButtons: string[] = ['/dashboard', '/history', '/account', '/next-consults', '/feedbacks'];
+    noShowLoginButtons: string[] = ['/dashboard', '/history', '/account', '/next-consults', '/feedbacks' , '/pets' , '/alerts'];
     @ViewChild('op') overlayPanel: OverlayPanel;
 
     constructor(public appMain: AdminLayoutComponent, private router: Router) {
