@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <p-card [style]="{'width': '60rem' ,'background-color': '#02a775' , 'height': '15rem' ,'border-radius':' 30px'}">
+            <p-card [style]="{'width': '60rem' ,'background-color': '#0D89A8' , 'height': '15rem' ,'border-radius':' 30px', 'padding': '10px'}">
 
                 <div class="col-12 p-0">
                     <span class="consult-now">Agende agora sua consulta</span>
@@ -28,9 +28,9 @@
                         <input type="text" class="input-start" placeholder="Localização" pInputText/>
                     </div>
                 </div>
-                <div class="col-12 p-0 flex justify-content-end">
-                    <p-button (onClick)="searchProfessionals()" label="Pesquisar" icon="pi pi-search"
-                              class="button-search" iconPos="right"></p-button>
+                <div class="col-12 p-0 pt-5 pr-5 flex justify-content-end">
+                    <button (click)="searchProfessionals()" pButton pRipple type="button" label="Pesquisar"
+                            class="p-button-raised p-button-success"></button>
                 </div>
             </p-card>
         </div>
