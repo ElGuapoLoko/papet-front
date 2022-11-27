@@ -6,54 +6,58 @@
         <div class="col-10 p-4 height-component">
             <div class="col-12 p-0">
                 <p-card [style]="{width: '100%',height: '60rem','border-radius': '20px'}">
-
-                    <p-table #dt [value]="histories" dataKey="id" [rowHover]="true"
-                             [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]"
-                             [loading]="loading"
-                             [paginator]="true"
-                             currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-                             [filterDelay]="0"
-                             [globalFilterFields]="['name','status']">
-                        <ng-template pTemplate="caption">
-                            <div class="flex justify-content-between">
-                                Históricos
-                                <span class="p-input-icon-left">
+                    <div class="col-12">
+                        <span class="font-title">Histórico</span>
+                    </div>
+                    <div class="col-12 p-0">
+                        <p-table #dt [value]="histories" dataKey="id" [rowHover]="true"
+                                 [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]"
+                                 [loading]="loading"
+                                 [paginator]="true"
+                                 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+                                 [filterDelay]="0"
+                                 [globalFilterFields]="['name','status']">
+                            <ng-template pTemplate="caption">
+                                <div class="flex justify-content-between">
+                                    Históricos
+                                    <span class="p-input-icon-left">
                                     <i class="pi pi-search"></i>
                                     <input pInputText type="text"
                                            (input)="dt.filterGlobal($event.target.value, 'contains')"
                                            placeholder="Pesquisar"/>
                                 </span>
-                            </div>
-                        </ng-template>
-                        <ng-template pTemplate="header">
-                            <tr>
-                                <th style="width: 4rem" class="text-center">
-                                    Médico
-                                </th>
-                                <th style="width: 4rem" class="text-center">
-                                    Status
-                                </th>
-                                <th style="width: 4rem" class="text-center">
-                                    Ações
-                                </th>
-                            </tr>
-                        </ng-template>
-                        <ng-template pTemplate="body" let-history>
-                            <tr class="p-selectable-row">
-                                <td>
-                                    <span class="flex justify-content-center">Henrique Siqueira</span>
-                                </td>
-                                <td>
-                                    <span class="flex justify-content-center">Em andamento</span>
-                                </td>
-                                <td class="inline-flex w-full justify-content-center">
-                                    <button pButton type="button" title="Mais opções" class="p-button-secondary" icon="pi pi-cog"></button>
-                                    <button pButton type="button" title="Visualizar" class="p-button-info ml-3" icon="pi pi-eye"></button>
-                                    <button pButton type="button" title="Excluír" class="p-button-danger ml-3" icon="pi pi-times"></button>
-                                </td>
-                            </tr>
-                        </ng-template>
-                    </p-table>
+                                </div>
+                            </ng-template>
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th style="width: 4rem" class="text-center">
+                                        Médico
+                                    </th>
+                                    <th style="width: 4rem" class="text-center">
+                                        Status
+                                    </th>
+                                    <th style="width: 4rem" class="text-center">
+                                        Ações
+                                    </th>
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-history>
+                                <tr class="p-selectable-row">
+                                    <td>
+                                        <span class="flex justify-content-center">Henrique Siqueira</span>
+                                    </td>
+                                    <td>
+                                        <span class="flex justify-content-center">Em andamento</span>
+                                    </td>
+                                    <td class="inline-flex w-full justify-content-center">
+                                        <button pButton type="button" title="Mais opções" class="p-button-secondary" icon="pi pi-cog"></button>
+                                        <button pButton type="button" title="Visualizar" class="p-button-info ml-3" icon="pi pi-eye"></button>
+                                        <button pButton type="button" title="Excluír" class="p-button-danger ml-3" icon="pi pi-times"></button>
+                                    </td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </div>
                 </p-card>
             </div>
         </div>
