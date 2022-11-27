@@ -11,6 +11,7 @@ import {ListProfessionalsComponent} from "./components/hackathon/list-profession
 import {DashboardComponent} from "./components/hackathon/dashboard/dashboard.component";
 import {NextConsultsComponent} from "./components/hackathon/next-consults/next-consults.component";
 import {FeedbacksComponent} from "./components/hackathon/feedbacks/feedbacks.component";
+import {MyPetsComponent} from "./components/hackathon/my-pets/my-pets.component";
 
 @NgModule({
     imports: [
@@ -24,6 +25,7 @@ import {FeedbacksComponent} from "./components/hackathon/feedbacks/feedbacks.com
                     {path: 'start', component: StartHackathonComponent},
                     {path: 'account', component: AccountComponent},
                     {path: 'history', component: HistoryComponent},
+                    {path: 'pets', component: MyPetsComponent},
                     {path: 'dashboard', component: DashboardComponent},
                     {path: 'next-consults', component: NextConsultsComponent},
                     {path: 'feedbacks', component: FeedbacksComponent},

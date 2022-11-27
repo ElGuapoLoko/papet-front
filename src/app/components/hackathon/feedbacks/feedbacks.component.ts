@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedbacks.component.scss']
 })
 export class FeedbacksComponent implements OnInit {
+  feedbacks: any[];
 
-  constructor() { }
+  loading: boolean = true;
 
-  ngOnInit(): void {
+  activityValues: number[] = [0, 100];
+
+  constructor() {
+  }
+
+  ngOnInit() {
+    this.loading = false;
+
+    this.feedbacks = [{}];
+
   }
 
 }

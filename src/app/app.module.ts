@@ -117,6 +117,7 @@ import { DashboardComponent } from './components/hackathon/dashboard/dashboard.c
 import { SidebarComponent } from './components/hackathon/sidebar/sidebar.component';
 import { NextConsultsComponent } from './components/hackathon/next-consults/next-consults.component';
 import { FeedbacksComponent } from './components/hackathon/feedbacks/feedbacks.component';
+import { MyPetsComponent } from './components/hackathon/my-pets/my-pets.component';
 
 @NgModule({
     imports: [
@@ -231,7 +232,8 @@ import { FeedbacksComponent } from './components/hackathon/feedbacks/feedbacks.c
         DashboardComponent,
         SidebarComponent,
         NextConsultsComponent,
-        FeedbacksComponent
+        FeedbacksComponent,
+        MyPetsComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
