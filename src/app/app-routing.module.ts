@@ -5,14 +5,12 @@ import {LoginComponent} from './components/login/login.component';
 import {StartHackathonComponent} from "./components/hackathon/start-hackathon/start-hackathon.component";
 import {AccountComponent} from "./components/hackathon/account/account.component";
 import {RedirectComponent} from "./layouts/redirect/redirect.component";
-import {FilesComponent} from "./components/hackathon/files/files.component";
 import {HistoryComponent} from "./components/hackathon/history/history.component";
-import {ProfileComponent} from "./components/hackathon/profile/profile.component";
-import {SavedComponent} from "./components/hackathon/saved/saved.component";
-import {WatchComponent} from "./components/hackathon/watch/watch.component";
 import {RegisterComponent} from "./components/hackathon/register/register.component";
 import {ListProfessionalsComponent} from "./components/hackathon/list-professionals/list-professionals.component";
 import {DashboardComponent} from "./components/hackathon/dashboard/dashboard.component";
+import {NextConsultsComponent} from "./components/hackathon/next-consults/next-consults.component";
+import {FeedbacksComponent} from "./components/hackathon/feedbacks/feedbacks.component";
 
 @NgModule({
     imports: [
@@ -25,13 +23,11 @@ import {DashboardComponent} from "./components/hackathon/dashboard/dashboard.com
                 children: [
                     {path: 'start', component: StartHackathonComponent},
                     {path: 'account', component: AccountComponent},
-                    {path: 'files', component: FilesComponent},
                     {path: 'history', component: HistoryComponent},
-                    {path: 'profile', component: ProfileComponent},
                     {path: 'dashboard', component: DashboardComponent},
+                    {path: 'next-consults', component: NextConsultsComponent},
+                    {path: 'feedbacks', component: FeedbacksComponent},
                     {path: 'list-professionals', component: ListProfessionalsComponent},
-                    // {path: 'saved', component: SavedComponent},
-                    // {path: 'watch', component: WatchComponent},
                 ],
             },
         ], {scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled'})

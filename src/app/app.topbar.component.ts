@@ -13,24 +13,15 @@ export class AppTopBarComponent {
     items: MenuItem[];
     actualRouteString: string = 'dashboard';
     showButtonsLogin: boolean = true;
-    noShowLoginButtons: string[] = ['/users', '/services', '/dashboard', '/orders/progress', '/orders/scheduled', '/orders/finalized', '/orders/correction'];
+    noShowLoginButtons: string[] = ['/dashboard', '/history', '/account', '/next-consults', '/feedbacks'];
     @ViewChild('op') overlayPanel: OverlayPanel;
 
     constructor(public appMain: AdminLayoutComponent, private router: Router) {
         this.resolveLoginButtons();
     }
 
-    myAccount(): void {
-        this.router.navigate(['/account'])
-        this.closeOp();
-    }
-
     logout(): void {
-        this.router.navigate(['/login'])
-    }
-
-    closeOp(): void {
-        this.overlayPanel.hide();
+        this.router.navigate(['/start'])
     }
 
     resolveLoginButtons(): void {

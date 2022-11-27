@@ -110,15 +110,13 @@ import {AccountComponent} from './components/hackathon/account/account.component
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import {SwiperModule} from "swiper/angular";
 import {RedirectComponent} from './layouts/redirect/redirect.component';
-import { ProfileComponent } from './components/hackathon/profile/profile.component';
 import { HistoryComponent } from './components/hackathon/history/history.component';
-import { FilesComponent } from './components/hackathon/files/files.component';
-import { SavedComponent } from './components/hackathon/saved/saved.component';
-import { WatchComponent } from './components/hackathon/watch/watch.component';
 import { RegisterComponent } from './components/hackathon/register/register.component';
 import { ListProfessionalsComponent } from './components/hackathon/list-professionals/list-professionals.component';
 import { DashboardComponent } from './components/hackathon/dashboard/dashboard.component';
 import { SidebarComponent } from './components/hackathon/sidebar/sidebar.component';
+import { NextConsultsComponent } from './components/hackathon/next-consults/next-consults.component';
+import { FeedbacksComponent } from './components/hackathon/feedbacks/feedbacks.component';
 
 @NgModule({
     imports: [
@@ -227,15 +225,13 @@ import { SidebarComponent } from './components/hackathon/sidebar/sidebar.compone
         StartHackathonComponent,
         AccountComponent,
         RedirectComponent,
-        ProfileComponent,
         HistoryComponent,
-        FilesComponent,
-        SavedComponent,
-        WatchComponent,
         RegisterComponent,
         ListProfessionalsComponent,
         DashboardComponent,
-        SidebarComponent
+        SidebarComponent,
+        NextConsultsComponent,
+        FeedbacksComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
