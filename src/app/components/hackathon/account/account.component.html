@@ -44,7 +44,8 @@
                     <div class="col-12 p-0 inline-flex mt-4">
                         <div class="col-6">
                             <span class="p-float-label">
-                                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="sexes" [(ngModel)]="sex_selected" optionLabel="name"></p-dropdown>
+                                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="sexes"
+                                            [(ngModel)]="sex_selected" optionLabel="name"></p-dropdown>
                                 <label for="phone">Gênero</label>
                             </span>
                         </div>
@@ -85,6 +86,11 @@
                                 <label for="number">Número</label>
                             </span>
                         </div>
+                    </div>
+
+                    <div class="col-12 flex justify-content-end">
+                        <button pButton pRipple type="button" icon="pi pi-save" label="Salvar" iconPos="right"
+                                class="p-button-raised p-button-success"></button>
                     </div>
 
                 </p-card>

@@ -13,6 +13,17 @@ export class AccountComponent implements OnInit {
         {id: 1, name: 'Másculino', type: 'masc'},
         {id: 2, name: 'Feminino', type: 'fem'}
     ];
+    name: string = '';
+    cpf: string = '';
+    phone1: string = '';
+    phone2: string = '';
+    type: string = '';
+
+    //Adrress
+    address: string = '';
+    cep: string = '';
+    complement: string = '';
+    number: string = '';
 
     constructor() {
     }
